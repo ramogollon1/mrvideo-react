@@ -16,6 +16,22 @@ function Playlist(props) {
 
 	return (
 		<div className="Playlist-container">
+			<Play 
+			size={25}
+			color="black"
+		/>
+		<Pause 
+			size={25}
+			color="red"
+		/>
+		<Volume 
+			size={25}
+			color="green"
+		/>
+		<FullScreen 
+			size={25}
+			color="blue"
+		/>
 		{
 			allPlaylist.map(function(element){
 				return(
