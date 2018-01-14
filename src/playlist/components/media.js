@@ -10,7 +10,7 @@ import './media.css';
 class Media extends PureComponent{
 	
 	state = {
-		author: 'Mafer Morao'
+		author: 'Rafael Mogollons'
 	}
 	// constructor(props) {
 	// 	super(props)
@@ -20,26 +20,25 @@ class Media extends PureComponent{
 	// 	// this.handleClick = this.handleClick.bind(this);
 	// }
 	handleClick = (event) => {
-		// console.log(this.props.image)
-		this.setState({
-			author: 'Rafael Mogollon'
-		})
+		this.props.openModal(this.props);
 	}
 	render() {
 		// const { title, author, image } = this.props;
 		const styles = {
-			body: {
-				color: '#44546b',
-				fontSize: 20,
-			}
-		}
+      container: {
+        color: '#44546b',
+        cursor: 'pointer',
+        width: 260,
+        border: '1px solid red'
+      }
+    }
 		return (
 			<div className="Media" onClick={this.handleClick}>
 				<div className="Media-cover">
 					<img
 						src={this.props.cover}
-						alt=""
-						width={240}
+						alt="this.props.title"
+						width={260}
 						height={160}
 						className="Media-image"
 					/>

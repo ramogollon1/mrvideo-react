@@ -10,7 +10,7 @@ function Icon(props) {
 			fill={color}
 			width={size}
 			height={size}
-			viewBox="0 0 32 35"
+			viewBox="0 0 32 32"
 		>
 			{props.children}
 		</svg>

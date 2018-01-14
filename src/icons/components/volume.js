@@ -1,4 +1,5 @@
 import React from 'react';
+import volume from './volume.svg'
 import Icon from './icon';
 
 function Volume(props) {
